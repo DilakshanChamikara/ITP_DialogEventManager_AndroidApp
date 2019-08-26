@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Questions">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+
+                    <TextView
+                        android:id="@+id/askText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="150dp"
+                        android:layout_marginRight="15dp"
+                        android:text="Ask the speaker/Audience "
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/publishQues"
+                        android:layout_width="match_parent"
+                        android:layout_height="122dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Type Your question.."
+                        android:inputType="text|textMultiLine"
+                        android:lines="6"
+                        android:longClickable="false"
+                        android:maxLines="10"
+                        android:minLines="5"
+                        android:padding="10dp" />
+
+                    <Button
+                        android:id="@+id/btnPublish"
+                        android:layout_width="100dp"
+                        android:layout_height="55dp"
+                        android:text="Publish"
+                        android:layout_marginRight="15dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/othersQues"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:text="Others' questions "
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/othersQues1"
+                        android:layout_width="match_parent"
+                        android:layout_height="122dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Type Your question.."
+                        android:inputType="text|textMultiLine"
+                        android:lines="6"
+                        android:longClickable="false"
+                        android:maxLines="10"
+                        android:minLines="5"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:id="@+id/othersQues2"
+                        android:layout_width="match_parent"
+                        android:layout_height="122dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Type Your question.."
+                        android:inputType="text|textMultiLine"
+                        android:lines="6"
+                        android:longClickable="false"
+                        android:maxLines="10"
+                        android:minLines="5"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:id="@+id/othersQues3"
+                        android:layout_width="match_parent"
+                        android:layout_height="122dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:background="@drawable/edit_text_background"
+                        android:hint="Type Your question.."
+                        android:inputType="text|textMultiLine"
+                        android:lines="6"
+                        android:longClickable="false"
+                        android:maxLines="10"
+                        android:minLines="5"
+                        android:padding="10dp" />
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
