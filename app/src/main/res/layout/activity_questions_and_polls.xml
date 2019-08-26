@@ -27,12 +27,13 @@
 
                     <ImageView
                         android:id="@+id/barMenuIcon"
-                        android:layout_width="49dp"
-                        android:layout_height="59dp"
+                        android:layout_width="0dp"
+                        android:layout_height="41dp"
                         android:layout_marginLeft="15dp"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginTop="10dp"
                         android:layout_marginRight="5dp"
                         android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
                         app:srcCompat="@drawable/menu" />
 
                     <EditText
@@ -49,42 +50,52 @@
                     <ImageView
                         android:id="@+id/myAcc"
                         android:layout_width="0dp"
-                        android:layout_height="41dp"
+                        android:layout_height="36dp"
                         android:layout_marginLeft="5dp"
-                        android:layout_marginTop="13dp"
+                        android:layout_marginTop="11dp"
                         android:layout_marginRight="12dp"
                         android:layout_marginBottom="5dp"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/pngguru" />
-
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
 
                     <Button
                         android:id="@+id/btnQues"
                         android:layout_width="185dp"
-                        android:layout_height="45dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="left"
                         android:layout_marginLeft="15dp"
-                        android:layout_marginTop="5dp"
                         android:layout_marginRight="5dp"
-                        android:layout_marginBottom="5dp"
-                        android:text="Questions" />
+                        android:layout_weight="1"
+                        android:onClick="changeFragment"
+                        android:text="Questions"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
 
                     <Button
                         android:id="@+id/btnPolls"
                         android:layout_width="185dp"
-                        android:layout_height="45dp"
+                        android:layout_height="55dp"
+                        android:layout_gravity="right"
                         android:layout_marginLeft="5dp"
-                        android:layout_marginTop="5dp"
                         android:layout_marginRight="15dp"
-                        android:layout_marginBottom="5dp"
                         android:layout_weight="1"
-                        android:text="Polls" />
+                        android:onClick="changeFragment"
+                        android:text="Polls"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/btnQues"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                 </LinearLayout>
 
@@ -100,8 +111,9 @@
                         android:layout_height="match_parent"
                         android:layout_marginLeft="15dp"
                         android:layout_marginRight="15dp"
-                        android:layout_marginTop="7dp"
+                        android:layout_marginTop="1dp"
                         android:layout_marginBottom="7dp" />
+
                 </LinearLayout>
 
             </LinearLayout>
